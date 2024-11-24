@@ -40,20 +40,20 @@ const image = new Image(); // erstellt HTML Tag
 image.src = 'Pellet Town.png'; // Konstante wird mit Bild belegt
 
 const playerDownImage = new Image();
-playerDownImage.src = './img/playerDown.png'
+playerDownImage.src = 'playerDown.png'
 
 const playerUpImage = new Image();
-playerUpImage.src = './img/playerUp.png'
+playerUpImage.src = 'playerUp.png'
 
 const playerLeftImage = new Image();
-playerLeftImage.src = './img/playerLeft.png'
+playerLeftImage.src = 'playerLeft.png'
 
 const playerRightImage = new Image();
-playerRightImage.src = './img/playerRight.png'
+playerRightImage.src = 'playerRight.png'
 
 
 const foregroundImage = new Image();
-foregroundImage.src = './img/foregroundObjects.png'
+foregroundImage.src = 'foregroundObjects.png'
 
 
 const player = new Sprite({
