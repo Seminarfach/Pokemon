@@ -37,7 +37,7 @@ collisionsMap.forEach((row, i) => { // Schleife für jede Reihe, "i" ist der Ind
 
 
 const image = new Image(); // erstellt HTML Tag
-image.src = 'Pellet Town.png'; // Konstante wird mit Bild belegt
+image.src = 'ellet Town.png'; // Konstante wird mit Bild belegt
 
 const playerDownImage = new Image();
 playerDownImage.src = 'playerDown.png'
