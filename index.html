@@ -1,0 +1,41 @@
+<html lang="en">
+<link href='stylesheet.css' rel='stylesheet'> <!-- Verknüpfung der Index Datei mit dem Stylesheet  -->
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style = "display: inline-block; position: relative;">
+        <div class ="Transition", id = "overlappingDIV"></div>
+        <canvas></canvas>
+        <div id="userInterface">
+            <div class = "Interface">
+                <div class = "Answers">
+                    <button> Answer1</button>
+                    <button> Answer2</button>
+                    <button> Answer3</button>
+                    <button> Answer4</button>
+                </div>
+                <div class = "text">
+                    <h1> Return press 'Z'</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" 
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="data/riddleZones.js"> </script> <!-- Verknüpfung der Index Datei mit den Rätsel Zonen  -->
+    <script src="data/collision.js"> </script> <!-- Verknüpfung der Index Datei mit den Kollisionen  -->
+    <script src="classes.js"> </script> <!-- Verknüpfung der Index Datei mit den Klassen  -->
+    <script src="index.js"> </script> <!-- Verknüpfung der Index Datei mit der Logik   -->
+</body>
+</html>
+

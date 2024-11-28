@@ -1,0 +1,87 @@
+
+*{
+  font-family: "Press Start 2P", cursive;
+  
+}
+body {
+  background-color:black;
+}
+
+h1 {
+  margin: 0;
+  font-size: 16px;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ddd;
+ 
+
+
+}
+canvas {
+
+    /*display: flex;
+    /*position: absolute; /* Box passt sich Größe Canva an und ermöglicht die Veränderung der Größe,*/
+                        /* weil die Box sich an dem Fenster orientiert -> folgende Befehle werden benötigt*/
+    /*top: 50%; /* Der Abstand des Canva zur obersten Schranke des Fenster beträgt 50% */
+    /*left: 50%; /* Der Abstand des Canva zur linken SChranke des Fesnter beträgt 50% */
+    /*transform: translate(-20%, -20%); /* Canva wird um -50% entlang der y- und x-Achse verschoben */
+    /* Nun ist das Canva bei jedem Bildschrimformat mittig angeordnet*/
+    border: 5px solid white; /* erzeugt eine Rahmen von 5 Pixeln um das Canva, sodass nicht direkt Rand*/
+    /*max-width: 100%; /* die maximale Breite des Canvas wird der Bildschirmgröße prozentual angepasst */
+    /*max-height: 100%; /* die maximale Höhe des Canvas wird der Bildschirmgröße prozentual angepasst */
+    /* Breite und Höhe des Canvas passen sich somit dem Bildschirmformat an */
+    
+    
+  }
+
+
+  .Transition{
+    background-color:black; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+  
+  }
+
+  .Interface{
+    background-color:white;
+    height: 140px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 4px black solid;
+    display: flex;
+  }
+
+  .Answers{
+    width: 66.66%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 2;
+
+
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+    border-left: 4px black solid;
+  }
+
+
+
