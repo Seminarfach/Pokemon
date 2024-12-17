@@ -1,0 +1,97 @@
+<html lang="en">
+<link href='stylesheet.css' rel='stylesheet'> <!-- Verknüpfung der Index Datei mit dem Stylesheet  -->
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "Responsive">
+        <div class ="Transition", id = "overlappingDIV"></div>
+        <canvas></canvas>
+        <div class = "Auswahl" id = "AuswahlID"> 
+
+            <div class = "Geräte">
+                <button>Handy</button>
+                <button>PC</button>
+            </div>
+
+
+        </div>
+        
+        <div id="movingInterface">
+            <div class = "movingInterface">
+
+                <div class = "movingUp" id = 'Up'>
+                    <button class = "movingUpButton">
+                        <span>&#8679;</span>
+                    </button>
+                </div>
+                
+                <div class = "movingRightLeft">
+                    
+                    <button id = 'Left' class = "movingRightLeftButton">
+                        <span>&#8678;</span>
+                        
+                    </button>
+                    <button  disabled id ="formatButton" class = "movingRightLeftButton">
+                        
+                    </button>
+                    <button id = 'Right' class = "movingRightLeftButton">
+                        <span>&#8680;</span>
+                        
+                    </button>
+                </div>
+
+                <div class = "movingDown" id = 'Down'>
+                    <button class="movingDownButton">
+                        <span>&#8681;</span>
+                        
+                        
+                    </button>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div id="userInterface">
+           
+            <div class = "Interface">
+                <div class = "Dialog", id="DialogBox">asdadfasdf </div>
+                    <div id = 'Content'>
+                        <div class = "Answers">
+                            <button class="AnswersButton">x:2 | y:4 | z:3</button>
+                            <button class = "AnswersButton">x:1 | y:3 | z:4</button>
+                            <button class = "AnswersButton">x:1 | y:4 | z:3</button>
+                            <button class = "AnswersButton">x:2 | y:4 | z:1</button>
+                        </div>
+                        <div class = "text">
+                            <h1> Return press 'Z'</h1>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" 
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    
+    <script src="data/classroomZones.js"> </script> <!-- Verknüpfung der Index Datei mit den Rätsel Zonen  -->
+    <script src="data/riddleZones.js"> </script> <!-- Verknüpfung der Index Datei mit den Rätsel Zonen  -->
+    <script src="data/collision.js"> </script> <!-- Verknüpfung der Index Datei mit den Kollisionen  -->
+    <script src="classes.js"> </script> <!-- Verknüpfung der Index Datei mit den Klassen  -->
+    <script src="index.js"> </script> <!-- Verknüpfung der Index Datei mit der Logik   -->
+    <script src="start.js"> </script> <!-- Verknüpfung der Index Datei mit den Rätsel Zonen  -->
+    <script src="classroom.js"> </script> <!-- Verknüpfung der Index Datei mit der Logik   -->
+    <script src="Rätsel.js"> </script> <!-- Verknüpfung der Index Datei mit der Logik   -->
+</body>
+</body>
+</html>
+

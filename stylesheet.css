@@ -1,0 +1,224 @@
+
+*{
+  font-family: "Press Start 2P", cursive;
+  
+}
+body {
+  background-color:pink;
+}
+
+h1 {
+  margin: 0;
+  font-size: 50%;
+  position: relative;
+}
+
+.AnswersButton {
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  font-size: 50%;
+}
+
+.AnswersButton:hover {
+  background-color: #ddd;
+ 
+
+
+}
+canvas {
+    background-color: black;
+    position: relative; /* Box passt sich Größe Canva an und ermöglicht die Veränderung der Größe,*/
+                        /* weil die Box sich an dem Fenster orientiert -> folgende Befehle werden benötigt*/
+    /* Der Abstand des Canva zur obersten Schranke des Fenster beträgt 50% */
+    /* Der Abstand des Canva zur linken SChranke des Fesnter beträgt 50% */
+    /* Canva wird um -50% entlang der y- und x-Achse verschoben */
+    /* Nun ist das Canva bei jedem Bildschrimformat mittig angeordnet*/
+    /* erzeugt eine Rahmen von 5 Pixeln um das Canva, sodass nicht direkt Rand*/
+    max-width: 100%; /* die maximale Breite des Canvas wird der Bildschirmgröße prozentual angepasst */
+    max-height: 100%; /* die maximale Höhe des Canvas wird der Bildschirmgröße prozentual angepasst */
+    /* Breite und Höhe des Canvas passen sich somit dem Bildschirmformat an */
+    
+    
+    
+  }
+
+  .Responsive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%; /* die maximale Breite des Canvas wird der Bildschirmgröße prozentual angepasst */
+    max-height: 100%;
+ 
+
+  }
+
+
+  .Transition{
+    background-color:black; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+    max-width: 100%;
+    max-height: 100%;
+  
+  }
+
+  .Auswahl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    height: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+   
+  }
+
+  .Geräte{
+    height: 50%;
+    width: 50%;
+    display: grid;
+    grid-template-rows: 2;
+  }
+
+  .movingInterface{
+    
+    height: 25%;
+    width: 30%;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    right: 0;
+    display: grid;
+    grid-template-columns: 3;
+    transform: translate(-25%)
+
+   
+  
+    
+
+  }
+
+  .movingUp{
+
+    
+    display:flex;
+    justify-content: center;
+    align-items: end;
+    
+
+    
+    
+  }
+
+  .movingUpButton{
+
+    position: relative;
+    width: 20%;
+    height: 100%;
+
+  }
+
+
+  .movingRightLeft{
+    
+    
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .movingRightLeftButton{
+    height: 100%;
+    width: 20%;
+
+    
+  }
+
+  .movingDown{
+    
+    position: relative;
+    
+    display:flex;
+    justify-content: center;
+    align-items: top; 
+    
+    
+  }
+
+ .movingDownButton{
+ 
+    height: 100%;
+    width: 20%;
+
+ }
+
+ 
+
+  .Interface{
+    height: 25%;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 4px black solid;
+    
+  }
+
+  .Dialog{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    font-size: 50%;
+    
+  
+  }
+
+  .Answers{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 2;
+
+
+  }
+
+  .text {
+    background-color: #eee;
+    position: relative;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    border-left: 4px black solid;
+    transform: translate(228%, -100%);
+  }
+
+
+
